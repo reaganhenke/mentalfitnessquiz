@@ -38,7 +38,7 @@ export const QUESTIONS: Question[] = [
     theme: Saboteur.A
   },
   {
-    text: 'I often find I have to work harder to make up for other people\'\s laziness.',
+    text: 'I often find I have to work harder to make up for other people\'s laziness.',
     theme: Saboteur.S
   },
   {
@@ -166,11 +166,11 @@ export const QUESTIONS: Question[] = [
     theme: Saboteur.HV
   },
   {
-    text: 'I\'\ve been told I can be intimidating.',
+    text: 'I\'ve been told I can be intimidating.',
     theme: Saboteur.C
   },
   {
-    text: 'I am a private person and don\'\t often let others know my deeper feelings.',
+    text: 'I am a private person and don\'t often let others know my deeper feelings.',
     theme: Saboteur.HR
   },
   {
@@ -178,7 +178,7 @@ export const QUESTIONS: Question[] = [
     theme: Saboteur.V
   },
   {
-    text: 'I\'\m the kind of person that puts the needs of others ahead of my own.',
+    text: 'I\'m the kind of person that puts the needs of others ahead of my own.',
     theme: Saboteur.P
   }
 ];

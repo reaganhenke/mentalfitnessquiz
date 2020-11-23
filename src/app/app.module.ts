@@ -7,7 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MatRadioModule } from '@angular/material/radio';
+import { MatRadioModule, MAT_RADIO_DEFAULT_OPTIONS } from '@angular/material/radio';
+import { MatButtonModule } from '@angular/material/button';
 import { QuizComponent } from './quiz/quiz.component';
 
 @NgModule({
@@ -22,9 +23,13 @@ import { QuizComponent } from './quiz/quiz.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    MatRadioModule
+    MatRadioModule,
+    MatButtonModule
   ],
-  providers: [],
+  providers: [{
+    provide: MAT_RADIO_DEFAULT_OPTIONS,
+    useValue: { color: 'primary' },
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
