@@ -2,7 +2,7 @@
 
 This project is to build a website for Dr. Janell Carroll that allows users to take a quiz to determine their mental fitness, in order to help her better coach her clients. Credit for the content of this quiz goes to [Shirzad Chamine](https://www.positiveintelligence.com/about/). Dr. Carroll's website is available at [drjanellcarroll.com](drjanellcarroll.com).
 
-This project is written by Reagan Henke and Sam Henke. You can learn more about Reagan through her [github](https://github.com/reaganhenke) or her [personal site](reaganhenke.com). You can learn more about Sam [TODO].
+This project is written by Reagan Henke and Sam Henke. You can learn more about Reagan through her [github](https://github.com/reaganhenke) or her [personal site](reaganhenke.com). You can learn more about Sam through his [github](https://github.com/Sammy66).
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
