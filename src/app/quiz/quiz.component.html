@@ -1,6 +1,6 @@
 <form [formGroup]="quizForm">
   <div class="question-group" *ngFor="let question of questions; index as i">
-    <label id="radio-group-{{ i }}">{{ question.text }}</label>
+    <label id="radio-group-{{ i }}" class="question-text">{{i + 1}}. {{ question.text }}</label>
     <mat-radio-group
       class="mat-radio-group"
       formControlName="{{ question.text }}"
@@ -11,9 +11,12 @@
         *ngFor="let score of scores; index as i"
         [value]="i + 1"
       >
-        {{ score }}
+        <p>{{ score }}</p>
       </mat-radio-button>
     </mat-radio-group>
+
+    <hr *ngIf="i < questions.length - 1">
+
   </div>
 
   <button mat-stroked-button color="primary" (click)="onSubmit()">Submit</button>

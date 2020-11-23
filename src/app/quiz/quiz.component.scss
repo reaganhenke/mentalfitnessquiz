@@ -1,16 +1,18 @@
+@import '../../styles.scss';
+
 form {
   display: flex;
   flex-direction: column;
+  border: 0.25rem solid $primary;
+  border-radius: 0.25rem;
+  width: 75%;
+  margin: auto;
 }
 
 .question-group {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  &:not(:last-of-type) {
-    border-bottom: 1px black solid;
-
-  }
 }
 
 .mat-radio-button {
@@ -21,4 +23,27 @@ form {
   vertical-align: top;
   flex-direction: column;
   padding: 0.5rem;
+  padding-top: 0.75rem;
+}
+
+.question-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: $primary;
+}
+
+hr {
+  border: rgba(0,0,0,0.1) solid;
+  border-width: 0 0 1px 0;
+  width: 90%;
+}
+
+button {
+  width: 75%;
+  margin: 1rem auto;
+}
+
+p {
+  color: rgba(0,0,0,.54);
+  margin: 0.25rem;
 }
