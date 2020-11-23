@@ -10,7 +10,7 @@ import { QUESTIONS } from 'src/shared/quizquestions';
 export class QuizComponent implements OnInit {
   questions = QUESTIONS;
   quizForm = this.fb.group({});
-  scores = [1, 2, 3, 4, 5];
+  scores = ['Strongly Disagree', '', 'Neutral', '', 'Strongly Agree'];
 
   constructor(private fb: FormBuilder) { }
 
