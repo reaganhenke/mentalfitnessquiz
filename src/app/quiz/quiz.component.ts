@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, Validators } from '@angular/forms';
+import { QUESTIONS } from 'src/shared/quizquestions';
 
 @Component({
   selector: 'app-quiz',
@@ -6,10 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quiz.component.scss']
 })
 export class QuizComponent implements OnInit {
+  questions = QUESTIONS;
+  quizForm = this.fb.group({});
+  scores = [1, 2, 3, 4, 5];
 
-  constructor() { }
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
+    for (const question of this.questions) {
+      this.quizForm.addControl(question.text, new FormControl('', Validators.required));
+    }
+  }
+
+  onSubmit() {
+    console.log('submitting');
+    console.log(this.quizForm);
   }
 
 }

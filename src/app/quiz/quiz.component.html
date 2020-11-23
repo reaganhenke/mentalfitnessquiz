@@ -1,1 +1,21 @@
-<p>quiz works!</p>
+<form [formGroup]="quizForm">
+  <ng-container *ngFor="let question of questions; index as i">
+    <label id="radio-group-{{ i }}">{{ question.text }}</label>
+    <mat-radio-group
+      class="radio-group"
+      formControlName="{{ question.text }}"
+      attr.aria-labelledby="radio-group-{{ i }}"
+    >
+      <mat-radio-button
+        class="example-radio-button"
+        *ngFor="let score of scores"
+        [value]="score"
+      >
+        {{ score }}
+      </mat-radio-button>
+    </mat-radio-group>
+  </ng-container>
+
+  <button (click)="onSubmit()">SUBMIT</button>
+</form>
+
