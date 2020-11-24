@@ -36,6 +36,10 @@ export class ResultsComponent implements OnInit {
     });
   }
 
+  print() {
+     window.print();
+  }
+
   restart() {
     this.clearResults.emit();
   }
