@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { QUESTIONS } from 'src/shared/quizquestions';
 
@@ -11,6 +11,7 @@ export class QuizComponent implements OnInit {
   questions = QUESTIONS;
   quizForm = this.fb.group({});
   scores = ['Strongly Disagree', '', 'Neutral', '', 'Strongly Agree'];
+  @Output() submitResults = new EventEmitter<any>();
 
   constructor(private fb: FormBuilder) { }
 
@@ -21,8 +22,8 @@ export class QuizComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log('submitting');
-    console.log(this.quizForm);
+    const results = this.quizForm.value;
+    this.submitResults.emit(results);
   }
 
 }

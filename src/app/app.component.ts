@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'mentalfitnessquiz';
+  title = 'Mental Fitness Quiz';
+  quizResults = undefined;
+
+  results(results: any) {
+    this.quizResults = results;
+  }
+
+  restart() {
+    this.quizResults = undefined;
+  }
 }

@@ -1,7 +1,13 @@
 
 <app-header></app-header>
 
-<router-outlet></router-outlet>
+<ng-container *ngIf="!quizResults;else resultsScreen">
+  <app-quiz (submitResults)="results($event)"></app-quiz>
+</ng-container>
+
+<ng-template #resultsScreen>
+  <app-results (clearResults)="restart($event)" [quizResults]="quizResults"></app-results>
+</ng-template>
 
 <footer>
   <app-footer></app-footer>

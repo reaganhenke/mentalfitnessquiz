@@ -1,1 +1,12 @@
-<meter id = "Saboteur" value = "4" min = "0" max = "10"> </meter>
+<div class="results">
+
+  <div *ngFor="let saboteur of formattedResults; index as i" class="chart-section">
+    <div class="bar-holder">
+      <div attr.aria-labelledby="saboteur-{{ i }}">{{ (saboteur.value / 25 * 10).toFixed(1) }}</div>
+    <div class="bar-result" [ngStyle]="{'height': (saboteur.value / 25 * 100) + '%' }"></div>
+    </div>
+    <p id="saboteur-{{ i }}">{{saboteur.name}}</p>
+  </div>
+</div>
+
+<button (click)="restart()">start again</button>

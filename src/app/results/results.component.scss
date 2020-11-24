@@ -1,0 +1,29 @@
+@import '../../styles.scss';
+
+.results {
+  display: flex;
+  justify-content: center;
+}
+
+.chart-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 6rem;
+}
+
+.bar-holder {
+  height: 20rem;
+  background-color: $secondary;
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 0.25rem;
+}
+
+.bar-result {
+  background-color: $primary;
+  width: 100%;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
