@@ -2,10 +2,12 @@
 <app-header></app-header>
 
 <ng-container *ngIf="!quizResults;else resultsScreen">
+  <p>Move quickly and go with the first response that comes to your mind.</p>
   <app-quiz (submitResults)="results($event)"></app-quiz>
 </ng-container>
 
 <ng-template #resultsScreen>
+  <p>Please print your results or take a photo to share with Dr. Carroll.</p>
   <app-results (clearResults)="restart($event)" [quizResults]="quizResults"></app-results>
 </ng-template>
 
