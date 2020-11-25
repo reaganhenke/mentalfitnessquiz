@@ -1,14 +1,13 @@
 export enum Saboteur {
-  A = 'Avoider',
-  C = 'Controller',
-  HA = 'Hyper-Achiever',
-  HR = 'Hyper-Rational',
-  HV = 'Hyper-Vigilant',
-  J = 'Judge',
-  P = 'Pleaser',
-  R = 'Restless',
-  S = 'Stickler',
-  V = 'Victim'
+  A = 'A',
+  C = 'C',
+  HA = 'HA',
+  HR = 'HR',
+  HV = 'HV',
+  P = 'P',
+  R = 'R',
+  S = 'S',
+  V = 'V'
 }
 
 export class Question {
