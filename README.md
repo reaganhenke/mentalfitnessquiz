@@ -4,8 +4,7 @@ This project is to build a website for Dr. Janell Carroll that allows users to t
 
 This project is written by Reagan Henke and Sam Henke. You can learn more about Reagan through her [github](https://github.com/reaganhenke) or her [personal site](reaganhenke.com). You can learn more about Sam through his [github](https://github.com/Sammy66).
 
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+Feature developement is tracked on [Trello](https://trello.com/b/C87cMYPv/mentalfitnessquizsite). The site is deployed with Netlify at [mentalfitnessquiz.netlify.app](https://mentalfitnessquiz.netlify.app/). This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
 
 ## Development server
 

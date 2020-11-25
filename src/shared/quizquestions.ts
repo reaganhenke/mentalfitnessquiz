@@ -26,11 +26,11 @@ export const QUESTIONS: Question[] = [
     theme: Saboteur.HR
   },
   {
-    text: 'I measure my self-worth mostly through my achievements',
+    text: 'I measure my self-worth mostly through my achievements.',
     theme: Saboteur.HA
   },
   {
-    text: 'I am a "pleaser.',
+    text: 'I am a "pleaser."',
     theme: Saboteur.P
   },
   {
@@ -138,7 +138,7 @@ export const QUESTIONS: Question[] = [
     theme: Saboteur.V
   },
   {
-    text: 'I feel worthy mostly when I am succesful and achieving.',
+    text: 'I feel worthy mostly when I am successful and achieving.',
     theme: Saboteur.HA
   },
   {
